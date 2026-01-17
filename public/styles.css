@@ -284,8 +284,46 @@ input {
   font-weight: 600;
 }
 
+.auth-body {
+  background: var(--bg);
+}
+
+.auth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 10vw;
+}
+
+.auth-wrapper {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 32px 10vw 64px;
+}
+
+.auth-card {
+  background: var(--card);
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 25px 45px rgba(9, 24, 52, 0.12);
+  max-width: 520px;
+  width: 100%;
+}
+
+.auth-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
 @media (max-width: 900px) {
   .nav-links {
     display: none;
+  }
+
+  .auth-header {
+    flex-direction: column;
+    gap: 16px;
   }
 }

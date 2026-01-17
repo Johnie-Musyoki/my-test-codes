@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartVaults | Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="auth-body">
+    <header class="auth-header">
+      <a class="logo" href="index.html">SmartVaults</a>
+      <a class="ghost" href="register.html">Create an account</a>
+    </header>
+
+    <main class="auth-wrapper">
+      <section class="auth-card">
+        <p class="eyebrow">Member Access</p>
+        <h1>Sign in to your SmartVaults portal.</h1>
+        <p class="hero-subtitle">
+          Review vault activity, schedule appointments, and manage your storage plans in one
+          place.
+        </p>
+        <form class="auth-form" id="login-form">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@company.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="••••••••" required />
+          </label>
+          <button type="submit" class="primary">Sign In</button>
+          <p class="form-note" id="login-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="auth.js"></script>
+  </body>
+</html>

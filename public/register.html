@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartVaults | Register</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="auth-body">
+    <header class="auth-header">
+      <a class="logo" href="index.html">SmartVaults</a>
+      <a class="ghost" href="login.html">Sign in</a>
+    </header>
+
+    <main class="auth-wrapper">
+      <section class="auth-card">
+        <p class="eyebrow">New Client</p>
+        <h1>Create your SmartVaults account.</h1>
+        <p class="hero-subtitle">
+          Start your onboarding to secure a private vault, concierge support, and insured storage.
+        </p>
+        <form class="auth-form" id="register-form">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Alex Morgan" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="alex@company.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Create a password" required />
+          </label>
+          <button type="submit" class="primary">Create Account</button>
+          <p class="form-note" id="register-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="auth.js"></script>
+  </body>
+</html>
